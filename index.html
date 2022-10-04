@@ -12,18 +12,22 @@
   <header>
     <h1>A CARD GAME OF WAR</h1>
   </header>
-  <div id = "playerone">
-    <h2>PLayer One</h2>
-    <div id = "p1 score"> Score: </div>
-    <div id = 'cards left'> Cards Left: </div>
-    <div id = 'games won'>Games Won: </div>
+  <div id = 'gameBoard'>
+    <div class = 'gameHeader'>
+      <div class = 'playerCards'>Player Cards: </div>
+      <div class = 'whoWins'></div>
+      <div class = 'computerCards'>Computer Cards: </div>
+    </div>
+    <div class = 'gameTable'>
+      <div class = 'playerDeck'>pic</div>
+      <div class = 'playerCard'>pic2</div>
+      <div class = 'centerSpace'>
+        <button id = 'drawButton'> DRAW</button>
+        <button id = 'newGame'>NEW GAME</button>
+      </div>
+      <div class = 'computerCard'>pic</div>
+      <div class = 'computerDeck'>pic</div>
+    </div>
   </div>
-  <div id = "playertwo">
-    <h2>PLayer Two</h2>
-    <div id = "p2 score"> Score: </div>
-    <div id = 'cards left'> Cards Left: </div>
-    <div id = 'games won'>Games Won: </div>
-  </div>
-  <div id = 'draw'> Draw </div>
 </body>
 </html>
