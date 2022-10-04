@@ -20,11 +20,24 @@ function randomCards() {
   } else if (playerCard === 14) {
     playerHighCards = 'A'
   } else {
-    playerHighCards = playerCard
+    playerHighCards === playerCard
   }
 
   const computerCard = Math.floor(Math.random() * 14 + 2)
   computerTurn.push(computerCard)
+
+  const computerHighCards = ''
+  if (computerCard === 11) {
+    computerHighCards = 'J'
+  } else if (computerCard === 12) {
+    computerHighCards = 'Q'
+  } else if (computerCard === 13) {
+    computerHighCards = 'K'
+  } else if (computerCard === 14) {
+    computerHighCards = 'A'
+  } else {
+    computerHighCards === computerCard
+  }
   console.log(computerTurn)
 }
 
