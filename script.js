@@ -4,13 +4,14 @@ let computerTurn = []
 let userScore = 26
 let computerScore = 26
 const dButton = document.getElementById('drawButton')
+
 //Functions for Game Logic
 function randomCards() {
-  const playerCard = Math.floor(Math.random() * 13 + 2)
+  const playerCard = Math.floor(Math.random() * 14 + 2)
   playerTurn.push(playerCard)
   console.log(playerTurn)
 
-  const playerHighCards = ''
+  let playerHighCards = ''
   if (playerCard === 11) {
     playerHighCards = 'J'
   } else if (playerCard === 12) {
@@ -20,13 +21,13 @@ function randomCards() {
   } else if (playerCard === 14) {
     playerHighCards = 'A'
   } else {
-    playerHighCards === playerCard
+    playerHighCards = playerCard
   }
 
   const computerCard = Math.floor(Math.random() * 14 + 2)
   computerTurn.push(computerCard)
 
-  const computerHighCards = ''
+  let computerHighCards = ''
   if (computerCard === 11) {
     computerHighCards = 'J'
   } else if (computerCard === 12) {
@@ -36,10 +37,10 @@ function randomCards() {
   } else if (computerCard === 14) {
     computerHighCards = 'A'
   } else {
-    computerHighCards === computerCard
+    computerHighCards = computerCard
   }
   console.log(computerTurn)
 }
 
 //Event Listeners
-dButton.addEventListener('click', randomCards())
+dButton.addEventListener('click', randomCards)
