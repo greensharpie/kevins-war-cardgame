@@ -1,8 +1,8 @@
 // Variables
 let playerTurn = []
 let computerTurn = []
-const warArrayP = Array(3)
-const warArrayC = Array(3)
+let warArrayP = []
+let warArrayC = []
 let playerScore = 26
 let computerScore = 26
 const dButton = document.getElementById('drawButton')
@@ -80,16 +80,16 @@ function scoreCheck() {
 
 function war() {
   console.log('loop initiated')
-  for (let i = 0; i < warArrayP.length; i++) {
-    if (i === 3) {
-      break
-    }
+  for (let i = 0; i <= 2; i++) {
     const playerWar = Math.floor(Math.random() * 14 + 2)
     warArrayP.push(playerWar)
   }
-
-  console.log(warArrayP)
+  for (let i = 0; i <= 2; i++) {
+    const computerWar = Math.floor(Math.random() * 14 + 2)
+    warArrayC.push(computerWar)
+  }
 }
-war()
+// war()
+
 //Event Listeners
 dButton.addEventListener('click', randomCards)
