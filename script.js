@@ -90,18 +90,31 @@ function war() {
   }
   console.log('array comparison')
   if (warArrayP[0] > warArrayC[0]) {
-    playerScore += 7
+    playerScore += 4
     computerScore -= 4
   } else if (warArrayC[0] > warArrayP[0]) {
-    computerScore += 7
+    computerScore += 4
     playerScore -= 4
-    // } else if (warArrayP[0] === warArrayC[0]){
-    //   if [1]
-    // }
+  } else if (warArrayP[0] === warArrayC[0]) {
+    console.log('array 1 war loop')
+    if (warArrayP[0] === warArrayC[0]) {
+      warArrayP[1] > warArrayC[1]
+      playerScore += 4
+      computerScore -= 4
+    } else if (warArrayP[1] === warArrayC[1]) {
+      warArrayP[2] > warArrayC[2]
+      playerScore += 4
+      computerScore -= 4
+    } else if (warArrayC[1] > warArrayP[1]) {
+      computerScore += 4
+      playerScore -= 4
+    } else if (warArrayC[2] > warArrayP[2]) {
+      computerScore += 4
+      playerScore -= 4
+    }
   }
 }
 // war()
-console.log('war arr p', warArrayP)
-console.log('warr arr c', warArrayC)
+
 //Event Listeners
 dButton.addEventListener('click', randomCards)
