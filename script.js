@@ -10,7 +10,6 @@ const pCards = document.getElementById('playerCards')
 const compCards = document.getElementById('computerCards')
 const pScores = document.getElementById('playerScore')
 const compScore = document.getElementById('computerScore')
-
 let playerCard = 0
 let computerCard = 0
 
@@ -31,7 +30,6 @@ function randomCards() {
   } else {
     playerHighCards = playerCard
   }
-
   pCards.innerText = `Player Card: ${playerHighCards}`
 
   const computerCard = Math.floor(Math.random() * 14 + 2)
@@ -59,13 +57,13 @@ function scoreCheck() {
   if (playerTurn.at(-1) === computerTurn.at(-1)) {
     war()
   } else if (playerScore <= 0) {
-    console.log('computer wins')
     alert('Computer Wins!')
     dButton.disabled = true
+    pScores.innerText = `Player Score: 0`
   } else if (computerScore <= 0) {
-    console.log('player wins')
     alert('Player Wins!')
     dButton.disabled = true
+    compScore.innerText = `Computer Score: 0`
   } else if (playerTurn.at(-1) > computerTurn.at(-1)) {
     playerScore++
     computerScore--
@@ -79,7 +77,6 @@ function scoreCheck() {
 }
 
 function war() {
-  console.log('loop initiated')
   for (let i = 0; i <= 2; i++) {
     const playerWar = Math.floor(Math.random() * 14 + 2)
     warArrayP.push(playerWar)
@@ -88,7 +85,6 @@ function war() {
     const computerWar = Math.floor(Math.random() * 14 + 2)
     warArrayC.push(computerWar)
   }
-  console.log('array comparison')
   if (warArrayP[0] > warArrayC[0]) {
     playerScore += 4
     computerScore -= 4
@@ -96,7 +92,6 @@ function war() {
     computerScore += 4
     playerScore -= 4
   } else if (warArrayP[0] === warArrayC[0]) {
-    console.log('array 1 war loop')
     if (warArrayP[0] === warArrayC[0]) {
       warArrayP[1] > warArrayC[1]
       playerScore += 4
@@ -114,7 +109,6 @@ function war() {
     }
   }
 }
-// war()
 
 //Event Listeners
 dButton.addEventListener('click', randomCards)
