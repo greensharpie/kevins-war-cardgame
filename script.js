@@ -1,6 +1,8 @@
 // Variables
 let playerTurn = []
 let computerTurn = []
+const warArrayP = Array(3)
+const warArrayC = Array(3)
 let playerScore = 26
 let computerScore = 26
 const dButton = document.getElementById('drawButton')
@@ -30,7 +32,7 @@ function randomCards() {
     playerHighCards = playerCard
   }
 
-  pCards.innerText = playerHighCards
+  pCards.innerText = `Player Card: ${playerHighCards}`
 
   const computerCard = Math.floor(Math.random() * 14 + 2)
   computerTurn.push(computerCard)
@@ -47,46 +49,47 @@ function randomCards() {
   } else {
     computerHighCards = computerCard
   }
-  compCards.innerText = computerHighCards
+  compCards.innerText = `Computer Card: ${computerHighCards}`
 
   scoreCheck()
 }
 
 //scores
-
-// if (playerCard === computerCard) {
-//   war()
-// } else
 function scoreCheck() {
-  console.log('playerTurn', playerTurn)
-  console.log('computerTurn', computerTurn)
-  if (playerTurn.at(-1) > computerTurn.at(-1)) {
+  if (playerTurn.at(-1) === computerTurn.at(-1)) {
+    //war()
+  } else if (playerScore <= 0) {
+    console.log('computer wins')
+    alert('Computer Wins!')
+    dButton.disabled = true
+  } else if (computerScore <= 0) {
+    console.log('player wins')
+    alert('Player Wins!')
+    dButton.disabled = true
+  } else if (playerTurn.at(-1) > computerTurn.at(-1)) {
     playerScore++
     computerScore--
-    console.log('player wins')
   } else if (computerTurn.at(-1) > playerTurn.at(-1)) {
     computerScore++
     playerScore--
-    console.log('computer wins')
   }
 
-  // console.log(playerScore)
-  // console.log(computerScore)
-  pScores.innerText = playerScore
-  compScore.innerText = computerScore
+  pScores.innerText = `Player Score: ${playerScore}`
+  compScore.innerText = `Computer Score: ${computerScore}`
 }
-// function war() {
-//   if (playerTurn === computerTrun) {
-//     war()
-//   } else if (playerTurn > computerTurn) {
-//     playerScore = playerScore + 4
-//     computerScore = computerScore - 4
-//   } else if (computerTurn > playerTurn) {
-//     computerScore = computerScore + 4
-//     playerScore = playerScore - 4
-//   }
-// }
-console.log('playerScore->', playerScore)
-console.log('computerScore->', computerScore)
+
+function war() {
+  console.log('loop initiated')
+  for (let i = 0; i < warArrayP.length; i++) {
+    if (i === 3) {
+      break
+    }
+    const playerWar = Math.floor(Math.random() * 14 + 2)
+    warArrayP.push(playerWar)
+  }
+
+  console.log(warArrayP)
+}
+war()
 //Event Listeners
 dButton.addEventListener('click', randomCards)
