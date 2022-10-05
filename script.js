@@ -57,7 +57,7 @@ function randomCards() {
 //scores
 function scoreCheck() {
   if (playerTurn.at(-1) === computerTurn.at(-1)) {
-    //war()
+    war()
   } else if (playerScore <= 0) {
     console.log('computer wins')
     alert('Computer Wins!')
@@ -88,8 +88,20 @@ function war() {
     const computerWar = Math.floor(Math.random() * 14 + 2)
     warArrayC.push(computerWar)
   }
+  console.log('array comparison')
+  if (warArrayP[0] > warArrayC[0]) {
+    playerScore += 7
+    computerScore -= 4
+  } else if (warArrayC[0] > warArrayP[0]) {
+    computerScore += 7
+    playerScore -= 4
+    // } else if (warArrayP[0] === warArrayC[0]){
+    //   if [1]
+    // }
+  }
 }
 // war()
-
+console.log('war arr p', warArrayP)
+console.log('warr arr c', warArrayC)
 //Event Listeners
 dButton.addEventListener('click', randomCards)
