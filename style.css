@@ -49,9 +49,9 @@ img {
   align-items: flex-start;
 }
 
-body {
+/* body {
   background-image: url(camo-bg.png);
-}
+} */
 
 #drawButton{
   padding: 20px 16px;
@@ -67,17 +67,29 @@ body {
 }
 
 #howToPlay{
-    background: rgba(74, 73, 73, 0.563);
+    /* background: rgba(74, 73, 73, 0.563); */
+    background-color: coral;
     height: 60vh;
-    line-height: 60vh;
+    line-height: 4vh;
     position: absolute;
     top: 23vh;
     width: 100vw;
-    display: flex;
-    flex-direction: row;
+    display: inline-flexbox;
+    /* flex-direction: row; */
+    /* overflow: hidden; */
     justify-content: center;
+    text-align: center;
   }
 
-#instructions {
-  flex-direction: column;
-}
+  #instructions{
+    background-color: violet;
+    margin: 0;
+    padding: 0;
+    line-height: 2;
+    height: 400px;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    inline-size: 400px;
+    white-space:pre-line;
+  }
