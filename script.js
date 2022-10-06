@@ -10,6 +10,8 @@ const pCards = document.getElementById('playerCards')
 const compCards = document.getElementById('computerCards')
 const pScores = document.getElementById('playerScore')
 const compScore = document.getElementById('computerScore')
+const pCardPic = document.getElementById('playerCard')
+const cCardPic = document.getElementById('computerCard')
 let playerCard = 0
 let computerCard = 0
 
@@ -30,7 +32,52 @@ function randomCards() {
   } else {
     playerHighCards = playerCard
   }
-  pCards.innerText = `Player Card: ${playerHighCards}`
+  // pCards.innerText = `Player Card: ${playerHighCards}`
+
+  //
+  switch (playerCard) {
+    case 2:
+      pCardPic.innerHTML = `<img width="200" height="300" src="PNG-cards-1.3/2_of_clubs.png">`
+      break
+    case 3:
+      pCardPic.innerHTML = `<img width="200" height="300" src="PNG-cards-1.3/3_of_clubs.png">`
+      break
+    case 4:
+      pCardPic.innerHTML = `<img width="200" height="300" src="PNG-cards-1.3/4_of_clubs.png">`
+      break
+    case 5:
+      pCardPic.innerHTML = `<img width="200" height="300" src="PNG-cards-1.3/5_of_clubs.png">`
+      break
+    case 6:
+      pCardPic.innerHTML = `<img width="200" height="300" src="PNG-cards-1.3/6_of_clubs.png">`
+      break
+    case 7:
+      pCardPic.innerHTML = `<img width="200" height="300" src="PNG-cards-1.3/7_of_clubs.png">`
+      break
+    case 8:
+      pCardPic.innerHTML = `<img width="200" height="300" src="PNG-cards-1.3/8_of_clubs.png">`
+      break
+    case 9:
+      pCardPic.innerHTML = `<img width="200" height="300" src="PNG-cards-1.3/9_of_clubs.png">`
+      break
+    case 10:
+      pCardPic.innerHTML = `<img width="200" height="300" src="PNG-cards-1.3/10_of_clubs.png">`
+      break
+    case 11:
+      pCardPic.innerHTML = `<img width="200" height="300" src="PNG-cards-1.3/jack_of_clubs.png">`
+      break
+    case 12:
+      pCardPic.innerHTML = `<img width="200" height="300" src="PNG-cards-1.3/queen_of_clubs.png">`
+      break
+    case 13:
+      pCardPic.innerHTML = `<img width="200" height="300" src="PNG-cards-1.3/king_of_clubs.png">`
+      break
+    case 14:
+      pCardPic.innerHTML = `<img width="200" height="300" src="PNG-cards-1.3/ace_of_clubs.png">`
+      break
+  }
+
+  //
 
   const computerCard = Math.floor(Math.random() * 14 + 2)
   computerTurn.push(computerCard)
@@ -47,7 +94,51 @@ function randomCards() {
   } else {
     computerHighCards = computerCard
   }
-  compCards.innerText = `Computer Card: ${computerHighCards}`
+  // compCards.innerText = `Computer Card: ${computerHighCards}`
+
+  //
+  switch (computerCard) {
+    case 2:
+      cCardPic.innerHTML = `<img width="200" height="300" src="PNG-cards-1.3/2_of_clubs.png">`
+      break
+    case 3:
+      cCardPic.innerHTML = `<img width="200" height="300" src="PNG-cards-1.3/3_of_clubs.png">`
+      break
+    case 4:
+      cCardPic.innerHTML = `<img width="200" height="300" src="PNG-cards-1.3/4_of_clubs.png">`
+      break
+    case 5:
+      cCardPic.innerHTML = `<img width="200" height="300" src="PNG-cards-1.3/5_of_clubs.png">`
+      break
+    case 6:
+      cCardPic.innerHTML = `<img width="200" height="300" src="PNG-cards-1.3/6_of_clubs.png">`
+      break
+    case 7:
+      cCardPic.innerHTML = `<img width="200" height="300" src="PNG-cards-1.3/7_of_clubs.png">`
+      break
+    case 8:
+      cCardPic.innerHTML = `<img width="200" height="300" src="PNG-cards-1.3/8_of_clubs.png">`
+      break
+    case 9:
+      cCardPic.innerHTML = `<img width="200" height="300" src="PNG-cards-1.3/9_of_clubs.png">`
+      break
+    case 10:
+      cCardPic.innerHTML = `<img width="200" height="300" src="PNG-cards-1.3/10_of_clubs.png">`
+      break
+    case 11:
+      cCardPic.innerHTML = `<img width="200" height="300" src="PNG-cards-1.3/jack_of_clubs.png">`
+      break
+    case 12:
+      cCardPic.innerHTML = `<img width="200" height="300" src="PNG-cards-1.3/queen_of_clubs.png">`
+      break
+    case 13:
+      cCardPic.innerHTML = `<img width="200" height="300" src="PNG-cards-1.3/king_of_clubs.png">`
+      break
+    case 14:
+      cCardPic.innerHTML = `<img width="200" height="300" src="PNG-cards-1.3/ace_of_clubs.png">`
+      break
+  }
+  //
 
   scoreCheck()
 }
