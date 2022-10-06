@@ -77,7 +77,7 @@ body {
 
 #drawButton{
   padding: 20px 30px;
-  background-color: steelblue;
+  /* background-color: steelblue; */
 }
 #newGame {
   padding: 20px 14px;
