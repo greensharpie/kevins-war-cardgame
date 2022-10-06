@@ -57,5 +57,27 @@ body {
   padding: 20px 16px;
 }
 
+#header {
+  background-color: #a80f0d;
+  padding: 5px 20px 10px;
+	max-width: 100%;
+	overflow: hidden;
+	text-align: left;
+	width: 100%;
+}
 
+#howToPlay{
+    background: rgba(74, 73, 73, 0.563);
+    height: 60vh;
+    line-height: 60vh;
+    position: absolute;
+    top: 23vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
 
+#instructions {
+  flex-direction: column;
+}

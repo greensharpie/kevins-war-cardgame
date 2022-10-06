@@ -6,6 +6,7 @@ let warArrayC = []
 let playerScore = 26
 let computerScore = 26
 const dButton = document.getElementById('drawButton')
+const playButton = document.getElementById('playButton')
 const pCards = document.getElementById('playerCards')
 const compCards = document.getElementById('computerCards')
 const pScores = document.getElementById('playerScore')
@@ -201,8 +202,11 @@ function warGame() {
       }
     }
   }
-
   //Event Listeners
   dButton.addEventListener('click', randomCards)
 }
 warGame()
+
+playButton.addEventListener('click', () => {
+  window.location.href = 'war.html'
+})

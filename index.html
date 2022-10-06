@@ -5,31 +5,21 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script defer src="script.js"></script>
-  <link rel = "stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
   <title>WAR</title>
 </head>
 <body>
-  <header>
-    <h1>A CARD GAME OF WAR</h1>
-  </header>
-  <div id = 'gameBoard'>
-    <div id = 'gameHeader'>
-      <!-- <div id = 'playerCards'>Player Cards: </div> -->
-      <div id = 'playerScore'>Player Score: </div>
-      <!-- <div id = 'whoWins'></div> -->
-      <!-- <div id = 'computerCards'>Computer Cards: </div> -->
-      <div id = 'computerScore'>Computer Score: </div>
+  <div id = 'header'><h1><strong>WAR!</strong></h1>
+    <h3>Simple. Deadly.</h3>
+  </div>
+  <div id = 'howToPlay'>
+    <h2><u>How To Play</u></h2>
+    <div id ='instructions'>
+      <div>Each player will start with half of the shuffled deck. The players will draw one card from their deck. The <em>higher</em> card wins. Aces are high.</div>
+      <div>In the event of a tie, <u>THERE WILL BE A WAR.</u> Each player will deal three cards face down. The player with the higher face up card takes all the cards!</div>
     </div>
-    <div id = 'gameTable'>
-      <div id = 'playerDeck'> <img src="camo-back.png"> </div>
-      <div id = 'playerCard'></div>
-      <div id = 'centerSpace'>
-        <button id = 'drawButton'> DRAW</button>
-        <button onclick="location.reload()" id = 'newGame'>NEW GAME</button>
-      </div>
-      <div id = 'computerCard'></div>
-      <div id = 'computerDeck'> <img src="camo-back.png"> </div>
-    </div>
+    <button id="playButton">PLAY!</button>
+    <div id = 'drawButton'></div>
   </div>
 </body>
 </html>
