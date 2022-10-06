@@ -9,7 +9,6 @@ header {
 
 #gameTable {
   background: rgba(74, 73, 73, 0.563);
-  /* background-color: hotpink; */
 	height: 60vh;
 	line-height: 60vh;
 	position: absolute;
@@ -24,20 +23,14 @@ img {
   width: 200px;
   height: 300px;
   object-fit: contain;
-  /* background-color: darkkhaki; */
   padding: 100px 0;
 } 
 
 #centerSpace {
-  /* background-color: chocolate; */
   display: block;
 }
 
 #gameBoard {
-  /* display: flex;
-  flex-direction: row;
-  justify-content: center; */
-  /* background-color: yellow; */
   height: 80px;
 } 
 
@@ -49,20 +42,18 @@ img {
 	text-align: center;
 	width: 100%;
   font-size: 40px;  
-  /* background-color: lightskyblue; */
   height: 550px;
 }
 
 #playerScore, #computerScore{
   align-items: flex-start;
-  /* background-color: forestgreen; */
   margin: 0;
-    padding: 0;
-    line-height: 2;
-    height: 400px;
-    width: 400px;
-    margin-left: auto;
-    margin-right: auto;
+  padding: 0;
+  line-height: 2;
+  height: 400px;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
 }
 #playerScore {
   float: left;
@@ -77,7 +68,6 @@ body {
 
 #drawButton{
   padding: 20px 30px;
-  /* background-color: steelblue; */
 }
 #newGame {
   padding: 20px 14px;
@@ -95,15 +85,12 @@ body {
 
 #howToPlay{
     background: rgba(97, 95, 95, 0.825);
-    /* background-color: coral; */
     height: 60vh;
     line-height: 4vh;
     position: absolute;
     top: 23vh;
     width: 100vw;
     display: inline-flexbox;
-    /* flex-direction: row; */
-    /* overflow: hidden; */
     justify-content: center;
     text-align: center;
     font-weight: bolder;
@@ -111,8 +98,6 @@ body {
   }
 
   #instructions{
-    /* background-color: violet; */
-    /* background: rgba(74, 73, 73, 0.563); */
     margin: 0;
     padding: 0;
     line-height: 2;

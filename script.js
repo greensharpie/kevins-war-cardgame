@@ -34,8 +34,6 @@ function warGame() {
     } else {
       playerHighCards = playerCard
     }
-    // pCards.innerText = `Player Card: ${playerHighCards}`
-
     //
     switch (playerCard) {
       case 2:
@@ -96,8 +94,6 @@ function warGame() {
     } else {
       computerHighCards = computerCard
     }
-    // compCards.innerText = `Computer Card: ${computerHighCards}`
-
     //
     switch (computerCard) {
       case 2:
