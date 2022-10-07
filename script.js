@@ -130,64 +130,6 @@ function warGame() {
 
     switch (playerCard) {
       case 2:
-        cCardPic.innerHTML = `<img width="200" height="300" src=${cardTwo[displayTwo]}>`
-        break
-      case 3:
-        cCardPic.innerHTML = `<img width="200" height="300" src=${cardThree[displayThree]}>`
-        break
-      case 4:
-        cCardPic.innerHTML = `<img width="200" height="300" src=${cardFour[displayFour]}>`
-        break
-      case 5:
-        cCardPic.innerHTML = `<img width="200" height="300" src=${cardFive[displayFive]}>`
-        break
-      case 6:
-        cCardPic.innerHTML = `<img width="200" height="300" src=${cardSix[displaySix]}>`
-        break
-      case 7:
-        cCardPic.innerHTML = `<img width="200" height="300" src=${cardSeven[displaySeven]}>`
-        break
-      case 8:
-        cCardPic.innerHTML = `<img width="200" height="300" src=${cardEight[displayEight]}>`
-        break
-      case 9:
-        cCardPic.innerHTML = `<img width="200" height="300" src=${cardNine[displayNine]}>`
-        break
-      case 10:
-        cCardPic.innerHTML = `<img width="200" height="300" src=${cardTen[displayTen]}>`
-        break
-      case 11:
-        cCardPic.innerHTML = `<img width="200" height="300" src=${cardJack[displayJack]}>`
-        break
-      case 12:
-        cCardPic.innerHTML = `<img width="200" height="300" src=${cardQueen[displayQueen]}>`
-        break
-      case 13:
-        cCardPic.innerHTML = `<img width="200" height="300" src=${cardKing[displayKing]}>`
-        break
-      case 14:
-        cCardPic.innerHTML = `<img width="200" height="300" src=${cardAce[displayAce]}>`
-        break
-    }
-
-    const computerCard = Math.floor(Math.random() * 14 + 2)
-    computerTurn.push(computerCard)
-
-    let computerHighCards = ''
-    if (computerCard === 11) {
-      computerHighCards = 'J'
-    } else if (computerCard === 12) {
-      computerHighCards = 'Q'
-    } else if (computerCard === 13) {
-      computerHighCards = 'K'
-    } else if (computerCard === 14) {
-      computerHighCards = 'A'
-    } else {
-      computerHighCards = computerCard
-    }
-
-    switch (computerCard) {
-      case 2:
         pCardPic.innerHTML = `<img width="200" height="300" src=${cardTwo[displayTwo]}>`
         break
       case 3:
@@ -227,6 +169,64 @@ function warGame() {
         pCardPic.innerHTML = `<img width="200" height="300" src=${cardAce[displayAce]}>`
         break
     }
+
+    const computerCard = Math.floor(Math.random() * 14 + 2)
+    computerTurn.push(computerCard)
+
+    let computerHighCards = ''
+    if (computerCard === 11) {
+      computerHighCards = 'J'
+    } else if (computerCard === 12) {
+      computerHighCards = 'Q'
+    } else if (computerCard === 13) {
+      computerHighCards = 'K'
+    } else if (computerCard === 14) {
+      computerHighCards = 'A'
+    } else {
+      computerHighCards = computerCard
+    }
+
+    switch (computerCard) {
+      case 2:
+        cCardPic.innerHTML = `<img width="200" height="300" src=${cardTwo[displayTwo]}>`
+        break
+      case 3:
+        cCardPic.innerHTML = `<img width="200" height="300" src=${cardThree[displayThree]}>`
+        break
+      case 4:
+        cCardPic.innerHTML = `<img width="200" height="300" src=${cardFour[displayFour]}>`
+        break
+      case 5:
+        cCardPic.innerHTML = `<img width="200" height="300" src=${cardFive[displayFive]}>`
+        break
+      case 6:
+        cCardPic.innerHTML = `<img width="200" height="300" src=${cardSix[displaySix]}>`
+        break
+      case 7:
+        cCardPic.innerHTML = `<img width="200" height="300" src=${cardSeven[displaySeven]}>`
+        break
+      case 8:
+        cCardPic.innerHTML = `<img width="200" height="300" src=${cardEight[displayEight]}>`
+        break
+      case 9:
+        cCardPic.innerHTML = `<img width="200" height="300" src=${cardNine[displayNine]}>`
+        break
+      case 10:
+        cCardPic.innerHTML = `<img width="200" height="300" src=${cardTen[displayTen]}>`
+        break
+      case 11:
+        cCardPic.innerHTML = `<img width="200" height="300" src=${cardJack[displayJack]}>`
+        break
+      case 12:
+        cCardPic.innerHTML = `<img width="200" height="300" src=${cardQueen[displayQueen]}>`
+        break
+      case 13:
+        cCardPic.innerHTML = `<img width="200" height="300" src=${cardKing[displayKing]}>`
+        break
+      case 14:
+        cCardPic.innerHTML = `<img width="200" height="300" src=${cardAce[displayAce]}>`
+        break
+    }
     scoreCheck()
   }
 
@@ -242,10 +242,10 @@ function warGame() {
       alert('Player Wins!')
       dButton.disabled = true
       compScore.innerText = `Computer Score: 0`
-    } else if (playerTurn.at(-1) < computerTurn.at(-1)) {
+    } else if (playerTurn.at(-1) > computerTurn.at(-1)) {
       playerScore++
       computerScore--
-    } else if (computerTurn.at(-1) < playerTurn.at(-1)) {
+    } else if (computerTurn.at(-1) > playerTurn.at(-1)) {
       computerScore++
       playerScore--
     }
