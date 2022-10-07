@@ -42,9 +42,21 @@
 
 - [x] Write out pseudocode
 - [x] Update Trello Board
+- [x] Be a new repo. Create a new repo in your GitHub and build your project there. DO NOT name your repository Project 1. Give it a real name.
+- [x] Include a beautiful, professional README.md (use markdown)
+- [x] Utilize flexbox or grid (or both)
+- [x] Include a minimum of 2 HTML pages and navigation between them
+- [x] Include a minimum of 2 event handlers
+- [x] Have at least 20 meaningful git commits. You should be committing your changes every time you build a new feature.
+- [x] Your code should be properly indented, spaced, and within code blocks. DO NOT leave in commented out code that was left unused (bad practice). Comments, if in your code at all, should be in your code to describe what your functions are doing.
+- [x] Display proper use of global variables and function parameters (function scopes)
+- [x] Use camelCase for JavaScript variables
+- [x] Be deployed on Surge.
 
 ---
 
 ### **_Credits_**
 
-- Images: [Google Search](http://www.google.com)
+- Card Images: [Google Search](http://www.google.com)
+- Card back Image: [Playing Cards On Demand](https://playingcardsondemand.com/camo-theme/)
+- Background Image: [Background](https://www.pngwing.com/en/search?q=camo)
