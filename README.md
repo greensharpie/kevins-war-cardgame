@@ -57,6 +57,6 @@
 
 ### **_Credits_**
 
-- Card Images: [Google Search](http://www.google.com)
+- Card Front Face Images: [Google Code](https://code.google.com/archive/p/vector-playing-cards/)
 - Card back Image: [Playing Cards On Demand](https://playingcardsondemand.com/camo-theme/)
-- Background Image: [Background](https://www.pngwing.com/en/search?q=camo)
+- Background Image: [PNG Wing](https://www.pngwing.com/en/search?q=camo)
