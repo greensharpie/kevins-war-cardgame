@@ -136,6 +136,66 @@ function warGame() {
 
     switch (playerCard) {
       case 2:
+        cCardPic.innerHTML = `<img width="200" height="300" src=${cardTwo[displayTwo]}>`
+        break
+      case 3:
+        cCardPic.innerHTML = `<img width="200" height="300" src=${cardThree[displayThree]}>`
+        break
+      case 4:
+        cCardPic.innerHTML = `<img width="200" height="300" src=${cardFour[displayFour]}>`
+        break
+      case 5:
+        cCardPic.innerHTML = `<img width="200" height="300" src=${cardFive[displayFive]}>`
+        break
+      case 6:
+        cCardPic.innerHTML = `<img width="200" height="300" src=${cardSix[displaySix]}>`
+        break
+      case 7:
+        cCardPic.innerHTML = `<img width="200" height="300" src=${cardSeven[displaySeven]}>`
+        break
+      case 8:
+        cCardPic.innerHTML = `<img width="200" height="300" src=${cardEight[displayEight]}>`
+        break
+      case 9:
+        cCardPic.innerHTML = `<img width="200" height="300" src=${cardNine[displayNine]}>`
+        break
+      case 10:
+        cCardPic.innerHTML = `<img width="200" height="300" src=${cardTen[displayTen]}>`
+        break
+      case 11:
+        cCardPic.innerHTML = `<img width="200" height="300" src=${cardJack[displayJack]}>`
+        break
+      case 12:
+        cCardPic.innerHTML = `<img width="200" height="300" src=${cardQueen[displayQueen]}>`
+        break
+      case 13:
+        cCardPic.innerHTML = `<img width="200" height="300" src=${cardKing[displayKing]}>`
+        break
+      case 14:
+        cCardPic.innerHTML = `<img width="200" height="300" src=${cardAce[displayAce]}>`
+        break
+    }
+
+    //
+
+    const computerCard = Math.floor(Math.random() * 14 + 2)
+    computerTurn.push(computerCard)
+
+    let computerHighCards = ''
+    if (computerCard === 11) {
+      computerHighCards = 'J'
+    } else if (computerCard === 12) {
+      computerHighCards = 'Q'
+    } else if (computerCard === 13) {
+      computerHighCards = 'K'
+    } else if (computerCard === 14) {
+      computerHighCards = 'A'
+    } else {
+      computerHighCards = computerCard
+    }
+    //
+    switch (computerCard) {
+      case 2:
         pCardPic.innerHTML = `<img width="200" height="300" src=${cardTwo[displayTwo]}>`
         break
       case 3:
@@ -173,66 +233,6 @@ function warGame() {
         break
       case 14:
         pCardPic.innerHTML = `<img width="200" height="300" src=${cardAce[displayAce]}>`
-        break
-    }
-
-    //
-
-    const computerCard = Math.floor(Math.random() * 14 + 2)
-    computerTurn.push(computerCard)
-
-    let computerHighCards = ''
-    if (computerCard === 11) {
-      computerHighCards = 'J'
-    } else if (computerCard === 12) {
-      computerHighCards = 'Q'
-    } else if (computerCard === 13) {
-      computerHighCards = 'K'
-    } else if (computerCard === 14) {
-      computerHighCards = 'A'
-    } else {
-      computerHighCards = computerCard
-    }
-    //
-    switch (computerCard) {
-      case 2:
-        cCardPic.innerHTML = `<img width="200" height="300" src="PNG-cards-1.3/2_of_clubs.png">`
-        break
-      case 3:
-        cCardPic.innerHTML = `<img width="200" height="300" src="PNG-cards-1.3/3_of_clubs.png">`
-        break
-      case 4:
-        cCardPic.innerHTML = `<img width="200" height="300" src="PNG-cards-1.3/4_of_clubs.png">`
-        break
-      case 5:
-        cCardPic.innerHTML = `<img width="200" height="300" src="PNG-cards-1.3/5_of_clubs.png">`
-        break
-      case 6:
-        cCardPic.innerHTML = `<img width="200" height="300" src="PNG-cards-1.3/6_of_clubs.png">`
-        break
-      case 7:
-        cCardPic.innerHTML = `<img width="200" height="300" src="PNG-cards-1.3/7_of_clubs.png">`
-        break
-      case 8:
-        cCardPic.innerHTML = `<img width="200" height="300" src="PNG-cards-1.3/8_of_clubs.png">`
-        break
-      case 9:
-        cCardPic.innerHTML = `<img width="200" height="300" src="PNG-cards-1.3/9_of_clubs.png">`
-        break
-      case 10:
-        cCardPic.innerHTML = `<img width="200" height="300" src="PNG-cards-1.3/10_of_clubs.png">`
-        break
-      case 11:
-        cCardPic.innerHTML = `<img width="200" height="300" src="PNG-cards-1.3/jack_of_clubs.png">`
-        break
-      case 12:
-        cCardPic.innerHTML = `<img width="200" height="300" src="PNG-cards-1.3/queen_of_clubs.png">`
-        break
-      case 13:
-        cCardPic.innerHTML = `<img width="200" height="300" src="PNG-cards-1.3/king_of_clubs.png">`
-        break
-      case 14:
-        cCardPic.innerHTML = `<img width="200" height="300" src="PNG-cards-1.3/ace_of_clubs.png">`
         break
     }
     //
