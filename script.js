@@ -88,6 +88,12 @@ const cardKing = [
   'PNG-cards-1.3/king_of_hearts2.png',
   'PNG-cards-1.3/king_of_spades2.png'
 ]
+const cardAce = [
+  'PNG-cards-1.3/ace_of_clubs.png',
+  'PNG-cards-1.3/ace_of_diamonds.png',
+  'PNG-cards-1.3/ace_of_hearts.png',
+  'PNG-cards-1.3/ace_of_spades.png'
+]
 //
 
 function warGame() {
@@ -124,6 +130,7 @@ function warGame() {
     const displayJack = Math.floor(Math.random() * cardJack.length)
     const displayQueen = Math.floor(Math.random() * cardQueen.length)
     const displayKing = Math.floor(Math.random() * cardKing.length)
+    const displayAce = Math.floor(Math.random() * cardAce.length)
 
     //
 
@@ -132,40 +139,40 @@ function warGame() {
         pCardPic.innerHTML = `<img width="200" height="300" src=${cardTwo[displayTwo]}>`
         break
       case 3:
-        pCardPic.innerHTML = `<img width="200" height="300" src="PNG-cards-1.3/3_of_clubs.png">`
+        pCardPic.innerHTML = `<img width="200" height="300" src=${cardThree[displayThree]}>`
         break
       case 4:
-        pCardPic.innerHTML = `<img width="200" height="300" src="PNG-cards-1.3/4_of_clubs.png">`
+        pCardPic.innerHTML = `<img width="200" height="300" src=${cardFour[displayFour]}>`
         break
       case 5:
-        pCardPic.innerHTML = `<img width="200" height="300" src="PNG-cards-1.3/5_of_clubs.png">`
+        pCardPic.innerHTML = `<img width="200" height="300" src=${cardFive[displayFive]}>`
         break
       case 6:
-        pCardPic.innerHTML = `<img width="200" height="300" src="PNG-cards-1.3/6_of_clubs.png">`
+        pCardPic.innerHTML = `<img width="200" height="300" src=${cardSix[displaySix]}>`
         break
       case 7:
-        pCardPic.innerHTML = `<img width="200" height="300" src="PNG-cards-1.3/7_of_clubs.png">`
+        pCardPic.innerHTML = `<img width="200" height="300" src=${cardSeven[displaySeven]}>`
         break
       case 8:
-        pCardPic.innerHTML = `<img width="200" height="300" src="PNG-cards-1.3/8_of_clubs.png">`
+        pCardPic.innerHTML = `<img width="200" height="300" src=${cardEight[displayEight]}>`
         break
       case 9:
-        pCardPic.innerHTML = `<img width="200" height="300" src="PNG-cards-1.3/9_of_clubs.png">`
+        pCardPic.innerHTML = `<img width="200" height="300" src=${cardNine[displayNine]}>`
         break
       case 10:
-        pCardPic.innerHTML = `<img width="200" height="300" src="PNG-cards-1.3/10_of_clubs.png">`
+        pCardPic.innerHTML = `<img width="200" height="300" src=${cardTen[displayTen]}>`
         break
       case 11:
-        pCardPic.innerHTML = `<img width="200" height="300" src="PNG-cards-1.3/jack_of_clubs.png">`
+        pCardPic.innerHTML = `<img width="200" height="300" src=${cardJack[displayJack]}>`
         break
       case 12:
-        pCardPic.innerHTML = `<img width="200" height="300" src="PNG-cards-1.3/queen_of_clubs.png">`
+        pCardPic.innerHTML = `<img width="200" height="300" src=${cardQueen[displayQueen]}>`
         break
       case 13:
-        pCardPic.innerHTML = `<img width="200" height="300" src="PNG-cards-1.3/king_of_clubs.png">`
+        pCardPic.innerHTML = `<img width="200" height="300" src=${cardKing[displayKing]}>`
         break
       case 14:
-        pCardPic.innerHTML = `<img width="200" height="300" src="PNG-cards-1.3/ace_of_clubs.png">`
+        pCardPic.innerHTML = `<img width="200" height="300" src=${cardAce[displayAce]}>`
         break
     }
 
