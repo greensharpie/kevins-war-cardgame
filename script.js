@@ -109,9 +109,27 @@ function warGame() {
       playerHighCards = playerCard
     }
     //
+
+    //
+
+    const displayTwo = Math.floor(Math.random() * cardTwo.length)
+    const displayThree = Math.floor(Math.random() * cardThree.length)
+    const displayFour = Math.floor(Math.random() * cardFour.length)
+    const displayFive = Math.floor(Math.random() * cardFive.length)
+    const displaySix = Math.floor(Math.random() * cardSix.length)
+    const displaySeven = Math.floor(Math.random() * cardSeven.length)
+    const displayEight = Math.floor(Math.random() * cardEight.length)
+    const displayNine = Math.floor(Math.random() * cardNine.length)
+    const displayTen = Math.floor(Math.random() * cardTen.length)
+    const displayJack = Math.floor(Math.random() * cardJack.length)
+    const displayQueen = Math.floor(Math.random() * cardQueen.length)
+    const displayKing = Math.floor(Math.random() * cardKing.length)
+
+    //
+
     switch (playerCard) {
       case 2:
-        pCardPic.innerHTML = `<img width="200" height="300" src="PNG-cards-1.3/2_of_clubs.png">`
+        pCardPic.innerHTML = `<img width="200" height="300" src=${cardTwo[displayTwo]}>`
         break
       case 3:
         pCardPic.innerHTML = `<img width="200" height="300" src="PNG-cards-1.3/3_of_clubs.png">`
