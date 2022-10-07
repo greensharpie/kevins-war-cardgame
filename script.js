@@ -15,7 +15,7 @@ const pCardPic = document.getElementById('playerCard')
 const cCardPic = document.getElementById('computerCard')
 let playerCard = 0
 let computerCard = 0
-//
+
 const cardTwo = [
   'PNG-cards-1.3/2_of_clubs.png',
   'PNG-cards-1.3/2_of_diamonds.png',
@@ -94,7 +94,6 @@ const cardAce = [
   'PNG-cards-1.3/ace_of_hearts.png',
   'PNG-cards-1.3/ace_of_spades.png'
 ]
-//
 
 function warGame() {
   //Functions for Game Logic
@@ -114,9 +113,6 @@ function warGame() {
     } else {
       playerHighCards = playerCard
     }
-    //
-
-    //
 
     const displayTwo = Math.floor(Math.random() * cardTwo.length)
     const displayThree = Math.floor(Math.random() * cardThree.length)
@@ -131,8 +127,6 @@ function warGame() {
     const displayQueen = Math.floor(Math.random() * cardQueen.length)
     const displayKing = Math.floor(Math.random() * cardKing.length)
     const displayAce = Math.floor(Math.random() * cardAce.length)
-
-    //
 
     switch (playerCard) {
       case 2:
@@ -176,8 +170,6 @@ function warGame() {
         break
     }
 
-    //
-
     const computerCard = Math.floor(Math.random() * 14 + 2)
     computerTurn.push(computerCard)
 
@@ -193,7 +185,7 @@ function warGame() {
     } else {
       computerHighCards = computerCard
     }
-    //
+
     switch (computerCard) {
       case 2:
         pCardPic.innerHTML = `<img width="200" height="300" src=${cardTwo[displayTwo]}>`
@@ -235,8 +227,6 @@ function warGame() {
         pCardPic.innerHTML = `<img width="200" height="300" src=${cardAce[displayAce]}>`
         break
     }
-    //
-
     scoreCheck()
   }
 
@@ -252,18 +242,16 @@ function warGame() {
       alert('Player Wins!')
       dButton.disabled = true
       compScore.innerText = `Computer Score: 0`
-    } else if (playerTurn.at(-1) > computerTurn.at(-1)) {
+    } else if (playerTurn.at(-1) < computerTurn.at(-1)) {
       playerScore++
       computerScore--
-    } else if (computerTurn.at(-1) > playerTurn.at(-1)) {
+    } else if (computerTurn.at(-1) < playerTurn.at(-1)) {
       computerScore++
       playerScore--
     }
-
     pScores.innerText = `Player Score: ${playerScore}`
     compScore.innerText = `Computer Score: ${computerScore}`
   }
-
   function war() {
     for (let i = 0; i <= 2; i++) {
       const playerWar = Math.floor(Math.random() * 14 + 2)
