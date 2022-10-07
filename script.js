@@ -15,6 +15,80 @@ const pCardPic = document.getElementById('playerCard')
 const cCardPic = document.getElementById('computerCard')
 let playerCard = 0
 let computerCard = 0
+//
+const cardTwo = [
+  'PNG-cards-1.3/2_of_clubs.png',
+  'PNG-cards-1.3/2_of_diamonds.png',
+  'PNG-cards-1.3/2_of_hearts.png',
+  'PNG-cards-1.3/2_of_spades.png'
+]
+const cardThree = [
+  'PNG-cards-1.3/3_of_clubs.png',
+  'PNG-cards-1.3/3_of_diamonds.png',
+  'PNG-cards-1.3/3_of_hearts.png',
+  'PNG-cards-1.3/3_of_spades.png'
+]
+const cardFour = [
+  'PNG-cards-1.3/4_of_clubs.png',
+  'PNG-cards-1.3/4_of_diamonds.png',
+  'PNG-cards-1.3/4_of_hearts.png',
+  'PNG-cards-1.3/4_of_spades.png'
+]
+const cardFive = [
+  'PNG-cards-1.3/5_of_clubs.png',
+  'PNG-cards-1.3/5_of_diamonds.png',
+  'PNG-cards-1.3/5_of_hearts.png',
+  'PNG-cards-1.3/5_of_spades.png'
+]
+const cardSix = [
+  'PNG-cards-1.3/6_of_clubs.png',
+  'PNG-cards-1.3/6_of_diamonds.png',
+  'PNG-cards-1.3/6_of_hearts.png',
+  'PNG-cards-1.3/6_of_spades.png'
+]
+const cardSeven = [
+  'PNG-cards-1.3/7_of_clubs.png',
+  'PNG-cards-1.3/7_of_diamonds.png',
+  'PNG-cards-1.3/7_of_hearts.png',
+  'PNG-cards-1.3/7_of_spades.png'
+]
+const cardEight = [
+  'PNG-cards-1.3/8_of_clubs.png',
+  'PNG-cards-1.3/8_of_diamonds.png',
+  'PNG-cards-1.3/8_of_hearts.png',
+  'PNG-cards-1.3/8_of_spades.png'
+]
+const cardNine = [
+  'PNG-cards-1.3/9_of_clubs.png',
+  'PNG-cards-1.3/9_of_diamonds.png',
+  'PNG-cards-1.3/9_of_hearts.png',
+  'PNG-cards-1.3/9_of_spades.png'
+]
+const cardTen = [
+  'PNG-cards-1.3/10_of_clubs.png',
+  'PNG-cards-1.3/10_of_diamonds.png',
+  'PNG-cards-1.3/10_of_hearts.png',
+  'PNG-cards-1.3/10_of_spades.png'
+]
+const cardJack = [
+  'PNG-cards-1.3/jack_of_clubs2.png',
+  'PNG-cards-1.3/jack_of_diamonds2.png',
+  'PNG-cards-1.3/jack_of_hearts2.png',
+  'PNG-cards-1.3/jack_of_spades2.png'
+]
+const cardQueen = [
+  'PNG-cards-1.3/queen_of_clubs2.png',
+  'PNG-cards-1.3/queen_of_diamonds2.png',
+  'PNG-cards-1.3/queen_of_hearts2.png',
+  'PNG-cards-1.3/queen_of_spades2.png'
+]
+const cardKing = [
+  'PNG-cards-1.3/king_of_clubs2.png',
+  'PNG-cards-1.3/king_of_diamonds2.png',
+  'PNG-cards-1.3/king_of_hearts2.png',
+  'PNG-cards-1.3/king_of_spades2.png'
+]
+//
 
 function warGame() {
   //Functions for Game Logic
